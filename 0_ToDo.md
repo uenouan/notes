@@ -1,6 +1,4 @@
-- [ToDo](#todo)
-  - [Github整理](#github整理)
-  - [WebSec Study](#websec-study)
+- [WebSec Study](#websec-study)
 - [退職後にやること](#退職後にやること)
   - [SevenSenseにもらうもの](#sevensenseにもらうもの)
   - [✅ 全体像（まず結論）](#-全体像まず結論)
@@ -35,10 +33,8 @@
     - [🔹離職票到着後](#離職票到着後)
     - [🔹その他](#その他)
 
-# ToDo
 
-## Github整理
-## WebSec Study
+# WebSec Study
 - [DVWA Tutorial](https://www.youtube.com/watch?v=V4MATqtdxss)
 - OWASP ZAP, BurpSuite
 - 徳丸本
