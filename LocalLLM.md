@@ -189,7 +189,7 @@ docker exec -it ollama ollama rm gemma4:26b
 
 ---
 
-### まとめ：上野様の現在の運用フロー
+### まとめ：運用フロー
 
 1.  **開始**: `docker compose up -d`
 2.  **利用**: ブラウザで `localhost:3000` を開き、`e4b` を選択して対話。
