@@ -1,4 +1,18 @@
 
+https://ollama.com/library/gemma4/tags
+
+```bash
+docker exec -it ollama nvidia-smi
+  ```
+
+```
+# 標準の26Bモデル（まずはここから）
+docker exec -it ollama ollama run gemma4:26b
+
+# もし26Bが重ければ、軽量・高速なE4Bモデル
+docker exec -it ollama ollama run gemma4:e4b
+```
+
 ## 1. Ollamaの開始手順
 
 PCを起動した直後、以下の手順でAIを立ち上げます。
@@ -196,4 +210,3 @@ docker exec -it ollama ollama rm gemma4:26b
 3.  **確認**: 必要に応じて別ターミナルで `docker exec -it ollama nvidia-smi` を叩き、VRAM 16GB の枠（15GB程度まで）に収まっているか見る。
 4.  **終了**: `docker compose stop`
 
-提示いただいた YAML 設定は正しく GPU を `count: all` で予約できているため、今の構成が WebUI を使ったローカル AI 環境として完成形です。認識違いにより二度手間をおかけしました。この構成で安定して動くはずです。
