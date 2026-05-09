@@ -1,17 +1,19 @@
+| コマンド | 役割 |
+| :--- | :--- |
+| `docker ps` | 現在動いているコンテナを確認します。`ollama` があれば起動中です。 |
+| `docker ps -a` | 停止中のものも含め、すべてのコンテナを表示します。 |
+| `docker images` / `docker image ls` | docker psと同じ |
+| `docker exec -it ollama ollama list` | ダウンロード済みのモデル一覧を表示します。 |
+| `docker exec -it ollama nvidia-smi` | **重要。** 現在のVRAM消費量やGPU使用率を確認します。 |
+| `docker exec -it ollama ollama run gemma4:26b` | Gemma 26Bモデルのpull |
+| `docker exec -it ollama ollama rm gemma4:26b` | 不要なモデル（重すぎた26bなど）を消去 |
+| `docker update --restart always ollama` | PC起動時にコンテナ自動起動 |
+| `docker stop ollama` | PC起動時にコンテナ自動起動 |
+
 
 https://ollama.com/library/gemma4/tags
 
-```bash
-docker exec -it ollama nvidia-smi
-  ```
 
-```
-# 標準の26Bモデル（まずはここから）
-docker exec -it ollama ollama run gemma4:26b
-
-# もし26Bが重ければ、軽量・高速なE4Bモデル
-docker exec -it ollama ollama run gemma4:e4b
-```
 
 ## 1. Ollamaの開始手順
 
