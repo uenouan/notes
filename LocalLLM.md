@@ -1,4 +1,132 @@
 
+# 1. Install Ubuntu on AI PC
+
+## 1.1 グラフィック機能を無効にしてインストーラを起動
+NVIDIAのグラボを搭載した環境ではUbuntuのインストール中に画面が固まる場合がある。
+これはUbuntu標準のオープンソースドライバー（nouveau）が最新のGPUやマザーボードのチップセットと衝突して発生する事象であり、「グラフィック機能を一時的に制限して起動」することで、インストールを進めることができる。
+
+---
+
+### 対処法：`nomodeset` を使った起動
+
+USBからインストーラ起動時のGRUBメニューで以下の操作を実施。
+
+1. **起動オプションの編集:**
+「Try or Install Ubuntu」にカーソルを合わせた状態で、キーボードの **`e`** キーを押します。
+2. **書き換え:**
+エディタ画面が開くので、下の方にある `linux` で始まる行を探します。
+その行の末尾にある `quiet splash` という文字の後ろに、半角スペースを空けて **`nomodeset`** と追記してください。
+* 変更前：`... quiet splash`
+* 変更後：`... quiet splash nomodeset`
+
+
+3. **起動:**
+**`Ctrl + X`** または **`F10`** を押して起動します。
+
+`nomodeset` は「OSが起動するまでビデオカードの高度な機能を使わない」という指示です。解像度が低くなったり動きがカクついたりしますが、インストーラーを動かすための最小限の画面出力は確保できるため、フリーズを回避できます。
+
+## 1.2. Make CUI default runlevel
+
+```bash
+# これでCUIがデフォルトになる
+sudo systemctl set-default multi-user.target
+# GUIを起動する
+sudo systemctl start gdm
+# GUIをデフォルトに変更する場合
+sudo systemctl set-default graphical.target
+```
+
+## 1.3. NVIDIA ドライバーのインストール
+
+まずはホストOSでGPUを認識させる必要があります。
+
+1. **ドライバーのインストール:**
+```bash
+# ドライバを確認。recommendedのものがインストール対象。
+ubuntu-drivers devices
+sudo ubuntu-drivers install
+sudo reboot
+```
+
+2. **認識確認:**
+再起動後、以下のコマンドでGPUの情報が表示されれば準備完了です。
+```bash
+nvidia-smi
+```
+
+## 1.4. Docker 本体のインストール
+
+コンテナを動かすための基盤を入れます。
+
+```bash
+sudo apt update
+sudo apt install -y docker.io
+# 現在のユーザーをdockerグループに追加（sudoなしで実行可能にする）
+sudo usermod -aG docker $USER
+
+```
+
+> **注:** `usermod` を反映させるため、ここで一度ログアウトして再ログインするか、`newgrp docker` を実行してください。
+
+## 3. NVIDIA Container Toolkit のインストール
+
+Dockerコンテナ内からGPUを利用可能にするための「橋渡し」を設定します。
+
+1. **リポジトリの登録:**
+```bash
+curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
+curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
+  sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
+  sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
+
+```
+
+
+2. **インストールと設定:**
+
+```bash
+    sudo apt update
+    sudo apt install -y nvidia-container-toolkit
+    sudo nvidia-ctk runtime configure --runtime=docker
+    sudo systemctl restart docker
+    ```
+
+## 4. Docker コンテナで Ollama を起動
+いよいよDockerを使用してOllamaを立ち上げます。
+
+1.  **コンテナの起動:**
+    
+```bash
+    docker run -d \
+      --gpus all \
+      -v ollama_data:/root/.ollama \
+      -p 11434:11434 \
+      --name ollama \
+      ollama/ollama
+    ```
+    *   `--gpus all`: すべてのGPUをコンテナに割り当てます。
+    *   `-v ollama_data:/root/.ollama`: ダウンロードしたモデルを保存する領域を永続化します。
+    *   `-p 11434:11434`: ホストとコンテナの通信ポートを繋ぎます。
+
+2.  **LLMモデルの実行:**
+    コンテナ内で `ollama run` を実行し、モデル（例: Llama 3）と対話を開始します。
+    ```bash
+    docker exec -it ollama ollama run llama3
+    ```
+
+---
+
+### この手順のメリット
+*   **クリーン:** OSに直接LLMのバイナリをインストールしないため、不要になったら `docker rm -f ollama` で一瞬で削除できます。
+*   **一貫性:** すべてのAIツールをDockerで管理する下地が整いました。WebUIを追加したい場合も、同様にDockerコマンド一つで追加可能です。
+
+これで一連の流れが完結します。まずは `nvidia-smi` が通るところから順に進めてみてください。
+
+```
+
+
+
+
 ## 1. Ollamaの開始手順
 
 PCを起動した直後、以下の手順でAIを立ち上げます。
