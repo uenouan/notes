@@ -2,7 +2,8 @@
 https://www.ja-osakashi.or.jp/agriculture/farm.html
 
 鶴見区
-F83　124区画
+F83（124区画）鍵番号1100
+
 
 プレミアム超撥水クライミングパンツ
 https://workman.jp/shop/g/g2300035619023/?srsltid=AfmBOop2qR4Sn4dZwc7MnUTuFogjR1Irx3_PqY7Iw11T239OLw3_WZJN
