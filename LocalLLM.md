@@ -1,3 +1,19 @@
+| コマンド | 役割 |
+| :--- | :--- |
+| `docker ps` | 現在動いているコンテナを確認します。`ollama` があれば起動中です。 |
+| `docker ps -a` | 停止中のものも含め、すべてのコンテナを表示します。 |
+| `docker images` / `docker image ls` | docker psと同じ |
+| `docker exec -it ollama ollama list` | ダウンロード済みのモデル一覧を表示します。 |
+| `docker exec -it ollama nvidia-smi` | **重要。** 現在のVRAM消費量やGPU使用率を確認します。 |
+| `docker exec -it ollama ollama run gemma4:26b` | Gemma 26Bモデルのpull |
+| `docker exec -it ollama ollama rm gemma4:26b` | 不要なモデル（重すぎた26bなど）を消去 |
+| `docker update --restart always ollama` | PC起動時にコンテナ自動起動 |
+| `docker stop ollama` | PC起動時にコンテナ自動起動 |
+
+
+https://ollama.com/library/gemma4/tags
+
+
 
 # 1. Install Ubuntu on AI PC
 
@@ -324,4 +340,3 @@ docker exec -it ollama ollama rm gemma4:26b
 3.  **確認**: 必要に応じて別ターミナルで `docker exec -it ollama nvidia-smi` を叩き、VRAM 16GB の枠（15GB程度まで）に収まっているか見る。
 4.  **終了**: `docker compose stop`
 
-提示いただいた YAML 設定は正しく GPU を `count: all` で予約できているため、今の構成が WebUI を使ったローカル AI 環境として完成形です。認識違いにより二度手間をおかけしました。この構成で安定して動くはずです。
