@@ -88,7 +88,45 @@ F83（124区画）鍵番号1100
 今週末は「土をひっくり返して石灰を混ぜるだけ」です。一気にやろうとせず、休憩を挟みながら、ご自身のペースで楽しんで汗を流してきてくださいね！
 
 
-# 訓練コース
+# 就農相談会&セミナー
+
+## 岡山県
+https://www.okayama-ninaite.com/soudan/soudan-5435/
+
+
+## 兵庫県
+### ひょうご就農支援センター
+https://www.hyogo-shunou.jp/training.html
+
+### 農業入門講座in駅前令和8年　第2期募集中
+https://www.hyogo-shunou.jp/training_ekimae-2026-2.html
+
+### 相談予約
+https://www.hyogo-shunou.jp/reservation.html
+
+### （遠い）丹波市　農の学校
+https://agri-innovation.jp/minori/
+
+
+## 農林水産FEST
+https://agri.mynavi.jp/fest/287772/
+開催日 2026年07月25日(土)
+1部 11:00～13:00（受付時間　10:45～12:30）
+2部 13:00～15:00（受付時間　12:45～14:30）
+
+開催日 2026年09月05日(土)
+1部 11:00～13:00（受付時間　10:45～12:30）
+2部 13:00～15:00（受付時間　12:45～14:30）
+
+開催場所 マイドームおおさか 2F 展示ホールD
+
+## 農業EXPO大阪(新農業人フェア)
+https://agri.mynavi.jp/shin-nogyojin/
+2026.09.13(日) 10:00~16:00
+会場 グランキューブ大阪（イベントホール）
+アクセス 京阪電車中之島線【中之島（大阪国際会議場）駅】2番出口すぐ
+
+# 就農支援
 
 ## 和歌山県 農林大学校 就農支援センター
 https://www.pref.wakayama.lg.jp/prefg/071601/sintyakujouhou/index.html
@@ -99,15 +137,10 @@ https://www.pref.wakayama.lg.jp/prefg/071601/d00222107_d/fil/chirashi.pdf
 令和8年度社会人課程「離転職者等職業訓練（農業科）」の内容
 https://www.pref.wakayama.lg.jp/prefg/071601/sintyakujouhou/index_d/fil/R8_kennsyuuannnai.pdf
 
-
-## 農業EXPO大阪(新農業人フェア)
-https://agri.mynavi.jp/shin-nogyojin/
-2026.09.13(日) 10:00~16:00
-会場 グランキューブ大阪（イベントホール）
-アクセス 京阪電車中之島線【中之島（大阪国際会議場）駅】2番出口すぐ
-
 ## 奈良県新規参入者支援事業
 https://www.pref.nara.lg.jp/n120/39870.html
+
+# 学習
 
 日本農業検定
 https://nou-ken.jp/faq/
