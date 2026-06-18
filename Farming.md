@@ -4,12 +4,6 @@ https://www.ja-osakashi.or.jp/agriculture/farm.html
 鶴見区
 F83（124区画）鍵番号1100
 
-
-プレミアム超撥水クライミングパンツ
-https://workman.jp/shop/g/g2300035619023/?srsltid=AfmBOop2qR4Sn4dZwc7MnUTuFogjR1Irx3_PqY7Iw11T239OLw3_WZJN
-
-
-
 今週末からスタートする「3週間分散（2週間寝かせる）プラン」ですね！
 20平米という広い区画を活かし、コストを抑えつつ、サツマイモやエダマメのベストシーズン（6月上旬）にバッチリ合わせる完璧なスケジュールをまとめました。
 
@@ -92,3 +86,40 @@ https://workman.jp/shop/g/g2300035619023/?srsltid=AfmBOop2qR4Sn4dZwc7MnUTuFogjR1
 エダマメ（大豆）の種は、鳥（カラスやハト）に非常にとられやすいです。種をまいた後、芽が出るまでの数日間だけ、100均の不織布や防虫ネットを上からベタ掛けしておくと確実です。
 
 今週末は「土をひっくり返して石灰を混ぜるだけ」です。一気にやろうとせず、休憩を挟みながら、ご自身のペースで楽しんで汗を流してきてくださいね！
+
+
+# 訓練コース
+
+## 和歌山県 農林大学校 就農支援センター
+https://www.pref.wakayama.lg.jp/prefg/071601/sintyakujouhou/index.html
+
+アグリ和歌山相談フェア R8/7/4
+https://www.pref.wakayama.lg.jp/prefg/071601/d00222107_d/fil/chirashi.pdf
+
+令和8年度社会人課程「離転職者等職業訓練（農業科）」の内容
+https://www.pref.wakayama.lg.jp/prefg/071601/sintyakujouhou/index_d/fil/R8_kennsyuuannnai.pdf
+
+
+## 農業EXPO大阪(新農業人フェア)
+https://agri.mynavi.jp/shin-nogyojin/
+2026.09.13(日) 10:00~16:00
+会場 グランキューブ大阪（イベントホール）
+アクセス 京阪電車中之島線【中之島（大阪国際会議場）駅】2番出口すぐ
+
+## 奈良県新規参入者支援事業
+https://www.pref.nara.lg.jp/n120/39870.html
+
+日本農業検定
+https://nou-ken.jp/faq/
+
+日本農業技術検定
+https://www.nca.or.jp/support/general/kentei/text.html
+
+
+# 植え付け
+スティックセニョール
+https://www.honda.co.jp/tiller/yasai/unique/broccolini/
+
+# Tool
+積算温度
+http://komefuji.s101.xrea.com/sekisan.html
