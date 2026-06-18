@@ -97,6 +97,18 @@ https://www.okayama-ninaite.com/soudan/soudan-5435/
 ## 兵庫県
 ### ひょうご就農支援センター
 https://www.hyogo-shunou.jp/training.html
+https://www.hyogo-shunou.jp/start_information.html
+https://hyogo-rakunou.com/learn-agriculture.html
+生きがい農業コース,就農コース,有機農業塾,半農半Ｘコースがある
+
+就農コース
+R8年度は令和8年8月7日(金曜日)～令和9年8月31日(火曜日)で実施。
+R9年度に受講して就農を目指すのがよいかもしれない。
+https://www.hyogo-rakunou.com/learn-agriculture-syunou.html
+
+半農半Xコース（路地野菜＋水稲コースが意外とよさそう）
+R8年度は令和8年4月4日(土曜日) ～ 令和9年3月6日(土曜日)で実施。
+https://hyogo-rakunou.com/learn-agriculture-hanX.html
 
 ### 農業入門講座in駅前令和8年　第2期募集中
 https://www.hyogo-shunou.jp/training_ekimae-2026-2.html
@@ -106,6 +118,13 @@ https://www.hyogo-shunou.jp/reservation.html
 
 ### （遠い）丹波市　農の学校
 https://agri-innovation.jp/minori/
+
+
+## MAFF
+就農を希望する社会⼈（他産業従事者、求職者等）を対象とした農業研修
+https://www.maff.go.jp/j/keiei/nougyou_jinzaiikusei_kakuho/kyoiku_syoukai.html
+https://www.maff.go.jp/j/keiei/nougyou_jinzaiikusei_kakuho/attach/pdf/kyoiku_syoukai-1.pdf
+
 
 
 ## 農林水産FEST
